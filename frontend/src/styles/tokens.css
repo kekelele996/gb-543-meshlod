@@ -1,0 +1,65 @@
+/* 设计 token：工程蓝图 / 制图室。组件内禁止出现 hex 字面量。 */
+:root {
+  --paper: oklch(0.965 0.008 240);
+  --paper-2: oklch(0.938 0.01 240);
+  --ink: oklch(0.225 0.02 250);
+  --rule: oklch(0.62 0.03 245);
+  --blue: oklch(0.52 0.09 245);
+  --red: oklch(0.56 0.19 27);
+  --amber: oklch(0.72 0.13 75);
+
+  --rule-soft: color-mix(in oklch, var(--rule) 32%, transparent);
+  --rule-hair: color-mix(in oklch, var(--rule) 18%, transparent);
+  --ink-muted: color-mix(in oklch, var(--ink) 62%, transparent);
+  --ink-faint: color-mix(in oklch, var(--ink) 42%, transparent);
+  --blue-wash: color-mix(in oklch, var(--blue) 12%, var(--paper));
+  --red-wash: color-mix(in oklch, var(--red) 12%, var(--paper));
+  --amber-wash: color-mix(in oklch, var(--amber) 18%, var(--paper));
+
+  --grid-line: color-mix(in oklch, var(--rule) 6%, transparent);
+  --toolbar-h: 48px;
+}
+
+/* 自托管字体（Google Fonts latin 子集，随源码交付，不依赖外网） */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../assets/fonts/Archivo-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('../assets/fonts/Archivo-800.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/IBMPlexSans-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../assets/fonts/IBMPlexSans-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/IBMPlexMono-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../assets/fonts/IBMPlexMono-600.woff2') format('woff2');
+}

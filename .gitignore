@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.vite/
+.env
+.DS_Store
+*.log
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+artifacts/
+data/
+coverage/
+*.html.tmp
